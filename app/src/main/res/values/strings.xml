@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ViewPagerDemo</string>
+    <string name="pager_adapter">PagerAdapter的使用</string>
 </resources>
