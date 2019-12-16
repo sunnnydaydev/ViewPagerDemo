@@ -20,7 +20,6 @@ public class FragmentStatePageAdapterActivity extends AppCompatActivity {
         initData();
 
     }
-
     private void initData() {
         String[] arr = new String[]{
                 "精选", "动漫", "电视剧", "少儿",
