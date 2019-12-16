@@ -14,6 +14,7 @@ import com.nmd.easy.viewpagerdemo.R;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private AppCompatTextView tvPagerAdapter;
+    private AppCompatTextView tvFragmentPagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,15 +23,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         initView();
         initData();
 
-
     }
 
     private void initData() {
         tvPagerAdapter.setOnClickListener(this);
+        tvFragmentPagerAdapter.setOnClickListener(this);
     }
 
     private void initView() {
         tvPagerAdapter = findViewById(R.id.tv_pager_adapter);
+        tvFragmentPagerAdapter = findViewById(R.id.tv_fragment_pager_adapter);
+
     }
 
     @Override
@@ -38,6 +41,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.tv_pager_adapter:
                 startActivity(new Intent(this, PagerAdapterDemoActivity.class));
+                break;
+            case R.id.tv_fragment_pager_adapter:
+                startActivity(new Intent(this, FragmentStatePageAdapterActivity.class));
                 break;
         }
     }

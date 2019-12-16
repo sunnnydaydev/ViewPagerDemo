@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".activities.MainActivity"
+        tools:context=".activities.FragmentStatePageAdapterActivity"
         android:orientation="vertical">
 
-    <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/tv_pager_adapter"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="@string/pager_adapter"
-            android:gravity="center"
-            android:layout_margin="30dp"
-            android:background="@drawable/btn_bg"
-            android:textSize="18sp"
-            android:textColor="@color/colorWhite"/>
     <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_fragment_pager_adapter"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="@string/viewpager_tablayout_fragment"
             android:gravity="center"
-            android:layout_margin="30dp"
-            android:background="@drawable/btn_bg"
+            android:background="@color/colorAccent"
             android:textSize="18sp"
-            android:textColor="@color/colorWhite"/>
+            android:textColor="@color/colorWhite"
+            />
+
+    <com.google.android.material.tabs.TabLayout
+            android:id="@+id/my_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="scrollable"/>
+
+    <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

@@ -32,9 +32,8 @@ public class PagerAdapterDemoActivity extends AppCompatActivity {
 
     private void offerData() {
         mList = new ArrayList<>();
-        View mView = LayoutInflater.from(this).inflate(R.layout.page_pageradapter, viewPager, false);
         for (int img : imgs) {
-//            View mView = LayoutInflater.from(this).inflate(R.layout.page_pageradapter, viewPager, false);
+            View mView = LayoutInflater.from(this).inflate(R.layout.page_pageradapter, viewPager, false);
             AppCompatImageView imageView = mView.findViewById(R.id.img);
             imageView.setImageResource(img);
             mList.add(mView);
