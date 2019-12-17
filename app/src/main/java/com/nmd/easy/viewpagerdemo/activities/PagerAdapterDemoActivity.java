@@ -44,4 +44,5 @@ public class PagerAdapterDemoActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.vp_pager);
         viewPager.setAdapter(new MyPagerAdapter(mList));
     }
+    // https://www.jianshu.com/p/4b6c9a983744    坑
 }
